@@ -13,6 +13,7 @@
         <div class="carousel-inner">
             @foreach ($products as $products)
             <div class="item {{$products['id']==1?'active':''}}">
+                <a href="detail/{{$products['id']}}" >
                 <img class="slider-img" src="https://image.shutterstock.com/image-photo/mobile-smart-phone-on-white-260nw-1311685394.jpg" alt="Chania">
                 <div class="carousel-caption">
                  <h3 style="color: black">{{$products['name']}}</h3>

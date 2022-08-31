@@ -20,5 +20,7 @@ Route::get('/',[ProductController::class,'index']);
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('detail/{id}',[ProductController::class,'detail']);
 
 Route::post('/login',[UserController::class,'login']);
+Route::post('addToCart',[ProductController::class,'addToCart']);
